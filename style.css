@@ -88,6 +88,18 @@ html {
     position: absolute;
     top: 0;
     left: 0; 
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    grid-template-rows: 10rem 1fr 2rem;
+}
+
+.nav-menu {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2rem;
 }
 
 .nav-menu-item {
@@ -104,6 +116,11 @@ html {
     background-color: #225cc7;
     color: #fff;
     border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+     
 }
 
 
