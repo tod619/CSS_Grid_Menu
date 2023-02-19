@@ -49,6 +49,11 @@ html {
     opacity: 0;
 }
 
+.change .x-btn {
+    visibility: visible;
+    opacity: 1;
+}
+
 .x-line {
     width: 3.5rem;
     height: 0.4rem;
@@ -78,6 +83,7 @@ html {
     justify-content: center;
     font-family: 'Dancing Script', cursive;
     text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.5);
+    transition: all 0.5s ease-in;
     
 }
 
@@ -128,6 +134,7 @@ html {
 .change .navigation {
     opacity: 1;
     visibility: visible;
+    transition: all 0.5s ease;
 }
 
 .nav-menu {
@@ -141,6 +148,7 @@ html {
 
 .nav-menu-item {
     list-style-type: none;
+    overflow: hidden;
 }
 
 .nav-menu-item:nth-child(1) {
@@ -213,7 +221,12 @@ html {
     justify-content: center;
     align-items: center;
     height: 100%;
-     
+    transform: translateX(-105%);
+}
+
+.change .nav-menu-link {
+    transform: translateX(0);
+    transition: all 0.7s 1s;
 }
 
 
