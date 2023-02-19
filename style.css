@@ -21,6 +21,7 @@ html {
     left: 3.5rem;
     cursor: pointer;
     z-index: 100;
+    overflow: hidden;
 }
 
 .lines {
@@ -38,6 +39,22 @@ html {
     height: 0.4rem;
     background-color: #fff;
     border-radius: 0.2rem;
+}
+
+.change .line {
+    transform: translateX(120%);
+}
+
+.line-1 {
+    transition: transform 0.5s 0.1s;
+}
+
+.line-2 {
+    transition: transform 0.5s 0.3s;
+}
+
+.line-3 {
+    transition: transform 0.5s 0.5s;
 }
 
 .x-btn {
@@ -83,13 +100,14 @@ html {
     justify-content: center;
     font-family: 'Dancing Script', cursive;
     text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.5);
-    transition: all 0.5s ease-in;
+    transition: all 0.5s;
     
 }
 
 .change .header {
     opacity: 0;
     visibility: hidden;
+    transition: all 0.5s 0.7s;
 }
 
 .banner h1 {
@@ -134,7 +152,7 @@ html {
 .change .navigation {
     opacity: 1;
     visibility: visible;
-    transition: all 0.5s ease;
+    transition: all 0.5s 0.7s;
 }
 
 .nav-menu {
