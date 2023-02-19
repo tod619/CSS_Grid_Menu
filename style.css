@@ -64,11 +64,13 @@ html {
     transform: translate(-50%, -50%);
     visibility: hidden;
     opacity: 0;
+    transition: all 0.5s;
 }
 
 .change .x-btn {
     visibility: visible;
     opacity: 1;
+    transition: all 0.5s 1.3s;
 }
 
 .x-line {
@@ -244,7 +246,7 @@ html {
 
 .change .nav-menu-link {
     transform: translateX(0);
-    transition: all 0.7s 1s;
+    transition: transform 0.7s 1s;
 }
 
 
