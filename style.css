@@ -81,6 +81,11 @@ html {
     
 }
 
+.change .header {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .banner h1 {
     font-size: 8rem;
     font-weight: 400;
@@ -118,6 +123,11 @@ html {
     grid-template-rows: 10rem 1fr 2rem;
     opacity: 0;
     visibility: hidden;
+}
+
+.change .navigation {
+    opacity: 1;
+    visibility: visible;
 }
 
 .nav-menu {
